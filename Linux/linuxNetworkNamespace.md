@@ -1,5 +1,7 @@
 ## 1. What is network namespace ?
 
+- Network Namespace (hereinafter referred to as netns) is a function of network isolation provided by the Linux kernel. It can isolate many different network spaces, and each has its own network protocol stack, which includes network interfaces (network cards), routing tables, iptables rules, and so on.For example, the well-known docker is network isolation based on netns. Today we will manually experiment with the isolation characteristics of netns.
+
 - Network namespace help us to separate many network in 1 host.
 
 - Each namespace have `interface` and `routing table` and separate with another namespace.
